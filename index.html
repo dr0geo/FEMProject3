@@ -5,27 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" />
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+	<div id="main">
 
-  You’ve used 815 GB of your storage
+	<section id="section1">
+		<p><img src="images/logo.svg" alt="website-logo" /></p>
+		<div id="logo">
+			<p class="background"><img src="images/icon-document.svg" alt="" /></p>
+			<p class="background"><img src="images/icon-folder.svg" alt="" /></p>
+			<p class="background"><img src="images/icon-upload.svg" alt="" /></p>
+		</div>
+	</section>
 
-  185 GB Left
+	<section id="section2">
+
+		<p id="remaining"><strong>185</strong> GB Left</p>
+		<div id="triangle"></div>
+		<p id="storage">You’ve used <strong>815 GB</strong> of your storage</p>
+		<p id="separator"><div id="circle"></div></p>
+		<div id="progress"><p>0 GB</p><p>1000 GB</p></div>
+	</section>
+	</div>
   
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/dr0geo">dr0geo</a>.
+  </footer>
 </body>
 </html>
