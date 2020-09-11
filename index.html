@@ -12,24 +12,26 @@
 </head>
 
 <body>
+	<div id="main">
+
 	<section id="section1">
 		<p><img src="images/logo.svg" alt="website-logo" /></p>
-		<p>
-		<img src="images/icon-document.svg" alt="" />
-		<img src="images/icon-folder.svg" alt="" />
-		<img src="images/icon-upload.svg" alt="" />
-		</p>
+		<div id="logo">
+			<p class="background"><img src="images/icon-document.svg" alt="" /></p>
+			<p class="background"><img src="images/icon-folder.svg" alt="" /></p>
+			<p class="background"><img src="images/icon-upload.svg" alt="" /></p>
+		</div>
 	</section>
 
 	<section id="section2">
 
-		<p>185 GB Left</p>
-
-		<p>You’ve used 815 GB of your storage</p>
-
-		<p>0 GB
-		1000 GB</p>
+		<p id="remaining"><strong>185</strong> GB Left</p>
+		<div id="triangle"></div>
+		<p>You’ve used <strong>815 GB</strong> of your storage</p>
+		<p id="separator"><div id="circle"></div></p>
+		<div id="progress"><p>0 GB</p><p>1000 GB</p></div>
 	</section>
+	</div>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
